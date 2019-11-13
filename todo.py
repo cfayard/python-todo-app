@@ -25,10 +25,10 @@ def delete_todo(index):
     except IndexError:
         print("👎👎 Sorry, we couldn't find that one.")
 
-delete_todo(0)
-print_todos()
-delete_todo(0)
-print_todos()
+# delete_todo(0)
+# print_todos()
+# delete_todo(0)
+# print_todos()
 
 # Show user main menu
 
@@ -57,6 +57,7 @@ The Best Todo App Ever
             add_todo(new_todo)
         elif choice == "3":
             index_to_complete = int(input("Complete which todo? "))
+            delete_todo(index_to_complete)
         else:
             print("Please enter a number for your choice.")
 
