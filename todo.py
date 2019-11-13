@@ -13,12 +13,17 @@ add_todo("feed the cat")
 # print the todo list again, making sure
 print(todo_list)
 
-
-
-
-
 # I need to be able to delete todos
-
+def delete_todo(index):
+    # del todo_list[index]
+    try:
+        todo_list.pop(index)
+    except IndexError:
+        print("👎👎 Sorry, we couldn't find that one.")
+delete_todo(0)
+print(todo_list)
+delete_todo(0)
+print(todo_list)
 # I need to print my todos
 
 # Show user main menu
